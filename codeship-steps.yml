@@ -1,0 +1,6 @@
+- name: Push To ECR
+  service: app
+  type: push
+  image_name: 637448200351.dkr.ecr.ap-southeast-2.amazonaws.com/damianmac/demoweb
+  registry: https://637448200351.dkr.ecr.ap-southeast-2.amazonaws.com
+  dockercfg_service: dockercfg_generator
