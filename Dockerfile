@@ -38,6 +38,7 @@ RUN ./build.sh -Target=Build && ./build.sh -Target=Test && ./build.sh -Target=Pu
 FROM microsoft/dotnet:2.1.1-aspnetcore-runtime
 WORKDIR /app  
 ENV ASPNETCORE_ENVIRONMENT Production  
+ENV BUILD_NUMBER 1.2.3
 ENV ASPNETCORE_URLS http://+:4000
 EXPOSE 4000
 ENTRYPOINT ["dotnet", "web.dll"]  
