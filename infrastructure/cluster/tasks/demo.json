@@ -1,0 +1,27 @@
+[
+    {
+        "name": "demoweb",
+        "image": "637448200351.dkr.ecr.ap-southeast-2.amazonaws.com/damianmac/demoweb",
+        "cpu": 10,
+        "memory": 512,
+        "links": [],
+        "portMappings": [
+            {
+                "containerPort": 4000,
+                "hostPort": 4000,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [],
+        "command": [],
+        "environment" : [
+            { "name" : "ASPNETCORE_ENVIRONMENT", "value" : "Production" }
+
+        ],
+        "mountPoints": [],
+        "volumesFrom": []
+    }
+]
+
+
